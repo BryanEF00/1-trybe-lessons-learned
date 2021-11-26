@@ -45,6 +45,19 @@ figcaption {
   font-weight: 600;
 }
 
+#logoGitHub img,
+#logoLinkedin img {
+  margin-top: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+#logoGitHub {
+  margin-left: 50px;
+  margin-right: 30px;
+  text-decoration: none;
+}
+
 #posicao_foto {
   width: 300px;
   display: inline-block;
@@ -71,4 +84,37 @@ figcaption {
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#meu_aprendizado {
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+  margin: auto;
+  margin-left: 20px;
+  margin-right: 100px;
+}
+
+#aprendizado-aside {
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+  margin-right: 5%;
+}
+
+#meu_aprendizado h2,#aprendizado-aside h2 {
+  text-align: center;
+}
+
+#meu_aprendizado p,#aprendizado-aside p {
+  text-align: justify;
+}
+
+#rodape {
+  text-align: center;
 }
