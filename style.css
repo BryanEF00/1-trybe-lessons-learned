@@ -4,11 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   background-color: rgb(253, 251, 251);
 }
-
 #cabecalho {
   position: fixed;
   top: 0;
@@ -20,54 +18,45 @@ body {
   padding: 0.5%;
   text-align: center;
 }
-
 #topo {
   position: absolute;
   top: 0px;
 }
-
 #titulo {
   font-weight: 700;
   font-size: 40px;
 }
-
 main {
   margin-top: 70px;
   margin-left: 20px;
 }
-
 #minha_foto {
   width: 300px;
   border-radius: 100px;
   border: 2px solid silver;
 }
-
 figcaption {
   padding-left: 40px;
   font-size: 20px;
   font-style: italic;
   font-weight: 600;
 }
-
 #logoGitHub img,
 #logoLinkedin img {
   margin-top: 5px;
   width: 40px;
   height: 40px;
 }
-
 #logoGitHub {
   margin-left: 50px;
   margin-right: 30px;
   text-decoration: none;
 }
-
 #posicao_foto {
   width: 300px;
   display: inline-block;
   vertical-align: top;
 }
-
 #licoes_aprendidas,
 #licoes_a_aprender {
   width: 300px;
@@ -75,12 +64,10 @@ figcaption {
   margin-left: 100px;
   margin-top: 70px;
 }
-
 #licoes_aprendidas li,
 #licoes_a_aprender li {
   padding: 5px;
 }
-
 #licoes_aprendidas h3,
 #licoes_a_aprender h3 {
   padding: 5px;
@@ -89,12 +76,10 @@ figcaption {
   font-weight: 600;
   text-transform: uppercase;
 }
-
 hr {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 #meu_aprendizado {
   display: inline-block;
   width: 40%;
@@ -103,61 +88,51 @@ hr {
   margin-left: 20px;
   margin-right: 100px;
 }
-
 #aprendizado-aside {
   display: inline-block;
   width: 40%;
   vertical-align: top;
   margin-right: 5%;
 }
-
 #meu_aprendizado h2,
 #aprendizado-aside h2 {
   text-align: center;
   padding-bottom: 10px;
 }
-
 #meu_aprendizado p,
 #aprendizado-aside p {
   text-align: justify;
   line-height: 25px;
 }
-
 #referencias {
   margin-left: 20px;
 }
-
 #referencias li {
   margin-left: 30px;
 }
-
 #referencias p {
   text-align: left;
   padding-top: 15px;
   padding-bottom: 5px;
 }
-
 #button-container {
   width: 50px;
   height: 50px;
   position: absolute;
   right: 20px;
-  bottom: -288px;
+  bottom: -310px;
   background-color: rgba(0, 0, 0, 0.7);
   border: none;
   border-radius: 15px;
 }
-
 #button-container span {
   display: inline-block;
   display: none;
 }
-
 #button-container:hover {
   background-color: #1a924e;
   transition: 0.5s;
 }
-
 #scroll-top {
   position: absolute;
   right: 15px;
@@ -170,7 +145,6 @@ hr {
   height: 20px;
   box-sizing: border-box;
 }
-
 #scroll-top:hover {
   position: absolute;
   right: 15px;
@@ -182,7 +156,6 @@ hr {
   width: 20px;
   height: 20px;
 }
-
 #rodape {
   text-align: center;
   padding-top: 20px;
