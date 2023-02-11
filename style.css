@@ -1,163 +1,213 @@
 * {
+  box-sizing: border-box;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+
+  --green: #1a924e;
 }
+
 body {
   background-color: rgb(253, 251, 251);
 }
+
 #cabecalho {
-  position: fixed;
-  top: 0;
-  border: 1px solid black;
-  background-color: #1a924e;
+  background-color: var(--green);
   color: white;
-  width: 100%;
-  margin-bottom: 0.5%;
-  padding: 0.5%;
+  padding: 16px 12px;
+  position: fixed;
   text-align: center;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
 }
-#topo {
-  position: absolute;
-  top: 0px;
-}
+
 #titulo {
+  font-size: 20px;
   font-weight: 700;
-  font-size: 40px;
-}
-main {
-  margin-top: 70px;
-  margin-left: 20px;
-}
-#minha_foto {
-  width: 300px;
-  border-radius: 100px;
-  border: 2px solid silver;
-}
-figcaption {
-  padding-left: 40px;
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 600;
-}
-#logoGitHub img,
-#logoLinkedin img {
-  margin-top: 5px;
-  width: 40px;
-  height: 40px;
-}
-#logoGitHub {
-  margin-left: 50px;
-  margin-right: 30px;
-  text-decoration: none;
-}
-#posicao_foto {
-  width: 300px;
-  display: inline-block;
-  vertical-align: top;
-}
-#licoes_aprendidas,
-#licoes_a_aprender {
-  width: 300px;
-  display: inline-block;
-  margin-left: 100px;
-  margin-top: 70px;
-}
-#licoes_aprendidas li,
-#licoes_a_aprender li {
-  padding: 5px;
-}
-#licoes_aprendidas h3,
-#licoes_a_aprender h3 {
-  padding: 5px;
-  text-align: left;
-  font-size: 20px;
-  font-weight: 600;
   text-transform: uppercase;
 }
-hr {
-  margin-top: 10px;
-  margin-bottom: 10px;
+
+#topo {
+  position: absolute;
+  top: 0;
 }
-#meu_aprendizado {
-  display: inline-block;
-  width: 40%;
-  vertical-align: top;
+
+main {
+  margin-top: 78px;
+}
+
+#posicao_foto {
+  display: grid;
+  grid-template-areas:
+    "img link"
+    "img link"
+    "name name";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.33fr 1.33fr 0.33fr;
+  height: fit-content;
+}
+
+#minha_foto {
+  border-radius: 16px;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  grid-area: img;
+  height: 90%;
   margin: auto;
-  margin-left: 20px;
-  margin-right: 100px;
+  object-fit: cover;
+  width: 75%;
 }
-#aprendizado-aside {
-  display: inline-block;
-  width: 40%;
-  vertical-align: top;
-  margin-right: 5%;
+
+figcaption {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  grid-area: link;
+  justify-content: space-evenly;
 }
+
+#logoGitHub,
+#logoLinkedin {
+  align-items: center;
+  color: black;
+  display: flex;
+  font-weight: 600;
+  gap: 8px;
+  text-decoration: none;
+}
+
+#logoGitHub img,
+#logoLinkedin img {
+  height: 44px;
+}
+
+#meu_nome {
+  border-radius: 2px;
+  border-top: 2px solid lightgray;
+  font-size: 20px;
+  font-weight: 700;
+  grid-area: name;
+  height: fit-content;
+  margin: 12px auto;
+  padding: 12px 8px;
+  text-align: center;
+  width: 90%;
+}
+
+
+#licoes_aprendidas,
+#licoes_a_aprender {
+  align-items: center;
+  display: grid;
+  grid-template-areas: "title title";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+#licoes_aprendidas h2,
+#licoes_a_aprender h2 {
+  background-color: rgba(211, 211, 211, 0.5);
+  grid-area: title;
+  padding: 12px;
+  text-align: center;
+  width: 100%;
+}
+
+#licoes_aprendidas li,
+#licoes_a_aprender li {
+  width: 50%;
+}
+
+#licoes_aprendidas li::marker,
+#licoes_a_aprender li::marker {
+  color: var(--green);
+  font-weight: 600;
+}
+
 #meu_aprendizado h2,
 #aprendizado-aside h2 {
+  background-color: rgba(211, 211, 211, 0.5);
+  padding: 12px;
   text-align: center;
-  padding-bottom: 10px;
+  width: 100%;
 }
+
 #meu_aprendizado p,
 #aprendizado-aside p {
-  text-align: justify;
   line-height: 25px;
+  padding: 16px;
+  text-align: justify;
+  width: 100%;
 }
-#referencias {
-  margin-left: 20px;
+
+#referencias h2 {
+  background-color: rgba(211, 211, 211, 0.5);
+  padding: 12px;
+  text-align: center;
 }
-#referencias li {
-  margin-left: 30px;
-}
+
 #referencias p {
-  text-align: left;
-  padding-top: 15px;
-  padding-bottom: 5px;
+  padding: 16px;
 }
+
+#referencias table {
+  margin: auto;
+  padding: 8px;
+  width: 100%;
+}
+
+table td {
+  width: 50%;
+}
+
+#referencias li {
+  margin: auto;
+  width: 50%;
+}
+
 #button-container {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  right: 20px;
-  bottom: -310px;
+  position: relative;
+  height: 48px;
+  width: 100%;
+}
+
+#button-container button {
   background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 16px;
   border: none;
-  border-radius: 15px;
-}
-#button-container span {
-  display: inline-block;
-  display: none;
-}
-#button-container:hover {
-  background-color: #1a924e;
-  transition: 0.5s;
-}
-#scroll-top {
+  cursor: pointer;
+  height: 48px;
+  margin-right: 8px;
   position: absolute;
-  right: 15px;
-  bottom: 10px;
+  right: 0;
+  width: 48px;
+}
+
+#button-container button:hover {
+  background-color: var(--green);
+  transition: 0.3s;
+}
+
+#scroll-top {
   border: solid #999;
   border-width: 0 6px 6px 0;
-  padding: 5px;
-  transform: rotate(-135deg);
-  width: 20px;
+  bottom: 10px;
   height: 20px;
-  box-sizing: border-box;
-}
-#scroll-top:hover {
+  padding: 5px;
   position: absolute;
   right: 15px;
-  bottom: 10px;
-  border: solid white;
-  border-width: 0 6px 6px 0;
-  padding: 5px;
   transform: rotate(-135deg);
   width: 20px;
-  height: 20px;
 }
+
+#button-container button:hover #scroll-top {
+  border: solid white;
+  border-width: 0 6px 6px 0;
+  transition: 0.3s;
+}
+
 #rodape {
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding: 24px;
 }
