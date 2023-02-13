@@ -46,6 +46,7 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1.33fr 1.33fr 0.33fr;
   height: fit-content;
+  width: 100%;
 }
 
 #minha_foto {
@@ -103,6 +104,7 @@ figcaption {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-items: center;
+  width: 100%;
 }
 
 #licoes_aprendidas h2,
@@ -210,4 +212,93 @@ table td {
 #rodape {
   text-align: center;
   padding: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  #posicao_foto {
+    grid-template-areas:
+      "img link"
+      "img link"
+      "name name";
+    grid-template-rows: 1.25fr 1.25fr 0.5fr;
+    height: 350px;
+  }
+
+  #minha_foto {
+    margin-left: 33%;
+    width: 50%;
+  }
+
+  figcaption {
+    justify-content: center;
+    gap: 32px;
+  }
+
+  #meu_nome {
+    width: 75%;
+  }
+
+  #licoes_container,
+  #aprendizado_container {
+    display: flex;
+    width: 100%;
+  }
+
+  #meu_aprendizado,
+  #aprendizado-aside {
+    width: 100%;
+  }
+
+  #meu_aprendizado p,
+  #aprendizado-aside p {
+    padding: 12px 24px;
+  }
+
+  #button-container button {
+    margin-right: 24px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    max-width: 1200px;
+    margin: 78px auto auto;
+  }
+
+  #section-1 {
+    display: flex;
+    width: 100%;
+  }
+
+  #posicao_foto {
+    width: 33%;
+  }
+
+  #licoes_container {
+    display: flex;
+    width: 66%;
+  }
+
+  #minha_foto {
+    margin-left: 24px;
+    width: 90%;
+  }
+
+  #meu_nome {
+    width: 90%;
+  }
+
+  figcaption {
+    padding-left: 24px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #button-container button {
+    margin-right: 0;
+  }
+
+  #meu_nome {
+    width: 100%;
+  }
 }

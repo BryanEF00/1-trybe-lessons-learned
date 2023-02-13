@@ -30,51 +30,55 @@
           Bryan Edward Fernandes
         </p>
       </figure>
-      <ol id="licoes_aprendidas">
-        <h2>Lições Aprendidas</h2>
-        <li>Unix</li>
-        <li>Git</li>
-        <li>GitHub</li>
-        <li>Internet</li>
-        <li>HTML</li>
-        <li>HTML Semântico</li>
-        <li>CSS</li>
-        <li>Autogestão</li>
-        <li>Autoliderança</li>
-        <li>Assertividade</li>
-      </ol>
-      <ul id="licoes_a_aprender">
-        <h2>Lições a Aprender</h2>
-        <li>JavaScript</li>
-        <li>Lógica de Programação</li>
-        <li>DOM</li>
-        <li>CSS Responsivo</li>
-        <li>HOF</li>
-        <li>React</li>
-        <li>Metodologias Ágeis</li>
-        <li>Docker</li>
-        <li>SQL</li>
-        <li>Python</li>
-      </ul>
+      <div id="licoes_container">
+        <ol id="licoes_aprendidas">
+          <h2>Lições Aprendidas</h2>
+          <li>Unix</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>Internet</li>
+          <li>HTML</li>
+          <li>HTML Semântico</li>
+          <li>CSS</li>
+          <li>Autogestão</li>
+          <li>Autoliderança</li>
+          <li>Assertividade</li>
+        </ol>
+        <ul id="licoes_a_aprender">
+          <h2>Lições a Aprender</h2>
+          <li>JavaScript</li>
+          <li>Lógica de Programação</li>
+          <li>DOM</li>
+          <li>CSS Responsivo</li>
+          <li>HOF</li>
+          <li>React</li>
+          <li>Metodologias Ágeis</li>
+          <li>Docker</li>
+          <li>SQL</li>
+          <li>Python</li>
+        </ul>
+      </div>
     </section>
-    <article id="meu_aprendizado" class="lado-esquerdo">
-      <h2>Meu aprendizado</h2>
-      <p>
-        Iniciei na Trybe sem nenhum background no desenvolvimento Web, e é
-        impressionante o quanto já evoluí em menos de 1 mês. Meu primeiro
-        contato foi com o curso introdutório de JavaScript, e ali já entendi
-        que iria gostar muito de estudar mais sobre o assunto. Sigo me
-        esforçando muito e evoluindo a cada dia.
-      </p>
-    </article>
-    <aside id="aprendizado-aside" class="lado-direito">
-      <h2>Sobre meu aprendizado</h2>
-      <p>
-        Zoom, Unix, Git/GitHub, HTML e agora o CSS. Tecnologias das quais
-        nunca tinha utilizado ou até mesmo nem sabia que existiam, e agora com
-        todo conhecimento acumulado, já consigo fazer páginas como essa.
-      </p>
-    </aside>
+    <div id="aprendizado_container">
+      <article id="meu_aprendizado" class="lado-esquerdo">
+        <h2>Meu aprendizado</h2>
+        <p>
+          Iniciei na Trybe sem nenhum background no desenvolvimento Web, e é
+          impressionante o quanto já evoluí em menos de 1 mês. Meu primeiro
+          contato foi com o curso introdutório de JavaScript, e ali já entendi
+          que iria gostar muito de estudar mais sobre o assunto. Sigo me
+          esforçando muito e evoluindo a cada dia.
+        </p>
+      </article>
+      <aside id="aprendizado-aside" class="lado-direito">
+        <h2>Sobre meu aprendizado</h2>
+        <p>
+          Zoom, Unix, Git/GitHub, HTML e agora o CSS. Tecnologias das quais
+          nunca tinha utilizado ou até mesmo nem sabia que existiam, e agora com
+          todo conhecimento acumulado, já consigo fazer páginas como essa.
+        </p>
+      </aside>
+    </div>
     <section id="referencias">
       <h2>Referências</h2>
       <table>
@@ -95,12 +99,12 @@
         </tr>
       </table>
     </section>
+    <nav id="button-container">
+      <button aria-label="scroll to top" onclick="window.scroll({top: 0, behavior: 'smooth'})">
+        <i id="scroll-top"></i>
+      </button>
+    </nav>
   </main>
-  <nav id="button-container">
-    <button onclick="window.scroll({top: 0, behavior: 'smooth'})">
-      <i id="scroll-top"></i>
-    </button>
-  </nav>
   <footer id="rodape">
     Todos direitos reservados, Bryan Edward Fernandes.
   </footer>
