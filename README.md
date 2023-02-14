@@ -2,7 +2,7 @@
 
 <div align="center">
   <p align="center">
-    Trybe Web Development Course - Introduction to HTML and CSS.
+    Trybe's Web Development Course - Introduction to HTML and CSS.
     <br />
     <a href="https://bryanef00.github.io/1-trybe-lessons-learned/" target="_blank">
       View Demo
@@ -11,7 +11,7 @@
 
 # About The Project
 
-This project was developed during the Fundamentals module of Trybe's Web Development Course.
+This project was developed during the Fundamentals Module of Trybe's Web Development Course.
 
 <br/>
 
